@@ -1,0 +1,17 @@
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\businessLogic.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\businessLogic.pdb
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\Repository.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\TSModel.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\EntityFramework.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\Repository.pdb
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\Repository.dll.config
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\TSModel.pdb
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\TSModel.dll.config
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\EntityFramework.xml
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\obj\Debug\businessLogic.csproj.CoreCompileInputs.cache
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\obj\Debug\businessLogic.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\obj\Debug\businessLogic.pdb
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\obj\Debug\businessLogic.csprojResolveAssemblyReference.cache
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\businessLogic.dll.config
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\EntityFramework.SqlServer.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\businessLogic\bin\Debug\EntityFramework.SqlServer.xml

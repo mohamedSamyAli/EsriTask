@@ -1,0 +1,14 @@
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\bin\Debug\TSModel.dll.config
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\bin\Debug\TSModel.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\bin\Debug\TSModel.pdb
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\bin\Debug\EntityFramework.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\bin\Debug\EntityFramework.xml
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.csproj.CoreCompileInputs.cache
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.dll
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.pdb
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.csprojResolveAssemblyReference.cache
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.Migrations.database.resources
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.csproj.GenerateResource.Cache
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.Migrations.forign.resources
