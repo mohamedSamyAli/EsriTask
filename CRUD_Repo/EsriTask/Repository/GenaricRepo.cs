@@ -10,7 +10,7 @@ namespace Repository
 {
     public class GenaricRepo<TEntity,TContext> : IRepository<TEntity>
         where TEntity:class
-        where TContext: DbContext,new()
+        where TContext: DbContext
     {
         private TContext context;
         private DbSet<TEntity> set;

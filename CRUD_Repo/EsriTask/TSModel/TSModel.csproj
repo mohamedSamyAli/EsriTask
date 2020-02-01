@@ -63,6 +63,10 @@
     <Compile Include="Migrations\202002011211368_forign.designer.cs">
       <DependentUpon>202002011211368_forign.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002012226334_ff.cs" />
+    <Compile Include="Migrations\202002012226334_ff.designer.cs">
+      <DependentUpon>202002012226334_ff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Teacher.cs" />
@@ -79,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002011211368_forign.resx">
       <DependentUpon>202002011211368_forign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002012226334_ff.resx">
+      <DependentUpon>202002012226334_ff.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,3 +12,4 @@ D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.csprojResolveAssembly
 D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.Migrations.database.resources
 D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.csproj.GenerateResource.Cache
 D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.Migrations.forign.resources
+D:\Tasks\Esri\CRUD_Repo\EsriTask\TSModel\obj\Debug\TSModel.Migrations.ff.resources

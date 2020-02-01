@@ -10,12 +10,23 @@ namespace TSModel
 
     public class TSContext : DbContext
     {
-        
-        public TSContext()
+        private static TSContext instance = new TSContext();
+
+        private TSContext()
             : base("name=TSModel")
         {
         }
-
+        public static TSContext Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new TSContext();
+                }
+                return instance;
+            }
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Student>()
@@ -27,8 +38,6 @@ namespace TSModel
                     cs.MapRightKey("TeacherRefId");
                     cs.ToTable("StudentTeacher");
                 });
-
-          
         }
 
         public virtual DbSet<Student> Students { get; set; }

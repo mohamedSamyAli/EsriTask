@@ -10,7 +10,7 @@ namespace BusinessLogic
 {
     public class UnitOfWork
     {
-        TSContext context = new TSContext();
+        TSContext context = TSContext.Instance;
 
         public TeacherManger TeacherManger
         {

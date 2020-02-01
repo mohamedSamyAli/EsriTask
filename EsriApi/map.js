@@ -41,7 +41,7 @@ function(Map,FeatureLayer,GraphicsLayer) {
   map.addLayer(graphicsLayer)
  $("#map > .spinnerContainer").hide()
  
- // query data from server 
+ // query data from server and adding Kendo grid 
  ExcuteQuery({
    url:MapURL+LayerId[layerName],
    where:"objectid<20000",
@@ -103,7 +103,7 @@ function(Map,FeatureLayer,GraphicsLayer) {
 }
 })
 
-// get layer info to obtain domain values
+// get layer info to obtain domain values and adding Kendo grid 
 request({
   url: MapURL+LayerId[layerName],
     content: {f: "json"},
