@@ -1,8 +1,6 @@
-var spinner = document.querySelector(".spinnerContainer")
 var MapURL = "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Water_Network/FeatureServer/"
 var map,featureLayer,graphicsLayer,LayerId;
 var layerName = "Water System Valves - Block View"
-
 
 
 require([
@@ -48,7 +46,6 @@ function(Map,FeatureLayer,GraphicsLayer) {
    where:"objectid<20000",
    outFields: ["facilityid", "valvetype", "diameter", "lastupdate"],
    callback:function(res){
-    console.log(res)
     var orderData  = res.features.map(e=>{
       return{
         facilityid:e.attributes.facilityid,
@@ -76,11 +73,10 @@ function(Map,FeatureLayer,GraphicsLayer) {
       });
       $("#Grid").kendoGrid({
         dataSource: gridDataSource,
-        scrollable: true,
-        sortable: true,
-    searchable: true
+        scrollable: true
   });
-  
+  //#region Add Graphic on hover and Link two table
+
   $("#Grid > .k-grid-content > table > tbody > tr").hover(function(e){
     
     if(e.type=="mouseenter"){
@@ -88,7 +84,6 @@ function(Map,FeatureLayer,GraphicsLayer) {
       console.log(res.features.find(function(k){return k.attributes.facilityid==e.currentTarget.cells[0].innerText}))
       var fea = res.features.find(function(k){return k.attributes.facilityid==e.currentTarget.cells[0].innerText}).geometry
       AddGraphic(map,graphicsLayer,fea)
-      
       $("#GridDi > .k-grid-content > table > tbody > tr > td").filter(function() {
         return $(this)[0].innerHTML === e.currentTarget.cells[2].innerText;
       }).scrollintoview()
@@ -99,11 +94,10 @@ function(Map,FeatureLayer,GraphicsLayer) {
       
     }else{
       $("#GridDi > .k-grid-content > table > tbody > tr > td").parent().css("background-color", "");
-      
-    }
-    
-    
+    }  
   })
+//#endregion
+
   $("#Grid > .spinnerContainer").hide()
 }
 })
@@ -138,20 +132,13 @@ request({
         dataSource: gridDataSource,
         scrollable: true
       });
+
       $("#GridDi > .spinnerContainer").hide()
       
     });
 })
-
-
-///////////////////////////////////////////////////////////////////////
 })
 })
-
-
-
-
-
 
 //#region Healper Functions
 ////////////////////////////////////////////////////////////////
@@ -167,9 +154,9 @@ function AddGraphic(mapG,graphicL,feature){
       new Color([255,0,0,0.5]));
       var graphic = new Graphic(feature,sms)
       console.log(graphic)
-     graphicL.add(graphic)
-     mapG.centerAt(feature)
-     if(mapG.getZoom()>14){
+      graphicL.add(graphic)
+      mapG.centerAt(feature)
+      if(mapG.getZoom()>14){
        mapG.setZoom(14)
       }
   });
