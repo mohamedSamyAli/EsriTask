@@ -11,10 +11,10 @@ function(request) {
     url: MapURL,
     content: {f: "json"},
   }).then((res)=>{
+    // LayerId contain layerId for Each Layer Name to avoid any Error happend in case Layer Id changed
     var LayerId ={}
     res.layers.forEach(l=> LayerId[l.name]=l.id)
-    ///////////////////////////////////////////////////////////////////////
-    
+
     require([
       "esri/map",
       "esri/layers/FeatureLayer",
@@ -32,7 +32,7 @@ function(Map,FeatureLayer,GraphicsLayer) {
     "id":"featureLayer"
   });
   
-
+  // changing the layer visiablity scale to be visable at any scale 
   featureLayer.setMaxScale(map.getMaxScale())
   featureLayer.setMinScale(map.getMinScale())
   map.addLayer(featureLayer); 
@@ -41,6 +41,7 @@ function(Map,FeatureLayer,GraphicsLayer) {
   map.addLayer(graphicsLayer)
  $("#map > .spinnerContainer").hide()
  
+ // query data from server 
  ExcuteQuery({
    url:MapURL+LayerId[layerName],
    where:"objectid<20000",
@@ -102,7 +103,7 @@ function(Map,FeatureLayer,GraphicsLayer) {
 }
 })
 
-
+// get layer info to obtain domain values
 request({
   url: MapURL+LayerId[layerName],
     content: {f: "json"},
